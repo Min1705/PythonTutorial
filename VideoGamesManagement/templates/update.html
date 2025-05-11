@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Cập nhật Game</title></head>
+<body>
+    <h1>Cập nhật game</h1>
+    <form method="post">
+        Tiêu đề: <input name="title" value="{{ game.Title }}"><br>
+        Nền tảng: <input name="platform" value="{{ game.Platform }}"><br>
+        Developer: <input name="developer" value="{{ game.Developer }}"><br>
+        Publisher: <input name="publisher" value="{{ game.Publisher }}"><br>
+        <button type="submit">Cập nhật</button>
+    </form>
+    <a href="/">Quay lại</a>
+</body>
+</html>

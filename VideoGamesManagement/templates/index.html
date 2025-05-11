@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Video Game Manager</title></head>
+<body>
+    <h1>Danh sách game</h1>
+    <a href="/create">Thêm game mới</a>
+    <ul>
+        {% for game in games %}
+        <li>
+            {{ game.Id }} - {{ game.Title }} | {{ game.Platform }}
+            [<a href="/update/{{ game.Id }}">Sửa</a>]
+            [<a href="/delete/{{ game.Id }}">Xoá</a>]
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
