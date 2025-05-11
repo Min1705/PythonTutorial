@@ -1,1 +1,3 @@
-print(range(10))
+import string
+key = string(input("Enter a string: "))
+print("The string is: ", key)
